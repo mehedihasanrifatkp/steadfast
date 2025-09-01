@@ -232,11 +232,16 @@
 }
 
 .key-feature {
-  background: #f8f9fa;
-  border-radius: 12px;
-  text-align: center;
-  padding: 15px;
-  height: 100%;
+ background: #cfe6db;
+    border-radius: 12px;
+    text-align: left;
+    padding: 15px;
+    height: 100%;
+    background-image: url(https://www.amiprobashi.com/assets/images/info/info_bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 250px 250px;
+    position: relative;
 }
 
 /* Handle on hover */
@@ -360,7 +365,53 @@ h6 {
   color: var(--txt-neutral-900);
   font-family: "Poppins", sans-serif;
 }
+:root {
+      --primary: #0e9f6e;
+      --ink: #163e37;
+      --ink-strong: #0f172a;
+      --card-1: #cfe6db;
+      --card-2: #c9dddd;
+      --card-3: #b4ddd6;
+      --radius-xl: 12px;
+    }
 
+    body { font-family: "Roboto", "Noto Sans Bengali", sans-serif; color: var(--ink); }
+    .barlow { font-family: "Barlow", "Noto Sans Bengali", sans-serif; }
+    .text-primary { color: var(--primary); }
+
+    /* Big card background */
+    .info-hero {
+      background-color: var(--card-1);
+      background-image: url('https://www.amiprobashi.com/assets/images/info/info_bg.png');
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 143px 137px;
+      border-radius: var(--radius-xl);
+      position: relative;
+    }
+    @media (min-width: 768px) {
+      .info-hero { background-size: 251px 240px; }
+    }
+
+    /* Small cards background */
+    .card-bg-1 { background-color: var(--card-2); background-image: url('https://www.amiprobashi.com/assets/images/info/info_card_bg_1.png'); }
+    .card-bg-2 { background-color: var(--card-3); background-image: url('https://www.amiprobashi.com/assets/images/info/info_card_bg_2.png'); }
+    .card-bg-3 { background-color: var(--card-3); background-image: url('https://www.amiprobashi.com/assets/images/info/info_card_bg_3.png'); }
+    .card-bg-4 { background-color: var(--card-1); background-image: url('https://www.amiprobashi.com/assets/images/info/info_card_bg_4.png'); }
+
+    .small-card {
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 80px 69px;
+      border-radius: var(--radius-xl);
+      padding: 15px;
+      min-height: 144px;
+    }
+    @media (min-width: 768px) {
+      .small-card { background-size: 138px 111px; }
+    }
+
+    .stat-illustration { position: absolute; bottom: 0; left: 0; }
 h1 {
   font-size: 56px;
   line-height: 72px;
