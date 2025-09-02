@@ -141,6 +141,22 @@ a:hover {
   border-radius: 20px;
   text
 } */
+.service-list img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-list img:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.service-list span {
+  transition: color 0.3s ease;
+}
+
+.service-list:hover span {
+  color: #007bff; /* hover হলে টেক্সটের রং বদলাবে */
+}
 
 .footer-wrapper {
   background: #2a3547;
@@ -217,7 +233,7 @@ a:hover {
   width: fit-content;
 }
 .intro-img {
-  width: 27.5%;
+  width: 50%;
 }
 .intro .quick-result {
   width: 18%;
@@ -2007,7 +2023,7 @@ body.auth {
     margin: 0;
   }
   .intro-img {
-    width: 78%;
+    width: 100%;
     margin-right: 0;
   }
   .intro-content p {

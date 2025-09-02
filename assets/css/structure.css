@@ -376,6 +376,7 @@ h6 {
     }
 
     body { font-family: "Roboto", "Noto Sans Bengali", sans-serif; color: var(--ink); }
+    { font-family: 'Hind Siliguri';font-size: 22px; }
     .barlow { font-family: "Barlow", "Noto Sans Bengali", sans-serif; }
     .text-primary { color: var(--primary); }
 
@@ -414,9 +415,10 @@ h6 {
     .stat-illustration { position: absolute; bottom: 0; left: 0; }
 h1 {
   font-size: 56px;
-  line-height: 72px;
-  font-family: bangla;
+  /* line-height: 72px; */
+  font-family: Hind Siliguri;
   color: white;
+  font-weight: 700;
 }
 h2 {
   font-size: 48px;
