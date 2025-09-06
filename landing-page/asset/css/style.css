@@ -4,6 +4,7 @@
   width: 1350px;
   padding: 0 auto !important;
 }
+
 /*------Navbar------*/
 /*------Navbar------*/
 /* Wrapper section */
@@ -21,11 +22,11 @@
 
 /* Each card box */
 .why-card {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: auto;
   background: #fff;
-  border: 1px solid #eee;
+  border: 1px solid #006d2b63;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   padding: 15px;
