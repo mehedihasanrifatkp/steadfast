@@ -19,8 +19,8 @@
 
 /* Each card box */
 .why-card {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   margin: auto;
   background: #fff;
   border: 1px solid #006d2b63;
@@ -41,7 +41,7 @@
 }
 
 .why-card img {
-  max-height: 60px;
+  max-height: 50px;
   object-fit: contain;
   margin-bottom: 10px;
 }
@@ -64,6 +64,7 @@
   z-index: 999;
   transition: 0.5s all;
 } */
+ 
 .navbar-wrapper.nav-sticky {
   position: fixed;
   top: 0;
