@@ -522,7 +522,25 @@
     }
   });
 </script>
+<script>
+    // Mobile Menu Toggle
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
 
+    toggleBtn.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+
+    // Sticky Navbar on Scroll
+    window.addEventListener("scroll", function() {
+      const navbarWrapper = document.querySelector(".navbar-wrapper");
+      if (window.scrollY > 50) {
+        navbarWrapper.classList.add("nav-sticky");
+      } else {
+        navbarWrapper.classList.remove("nav-sticky");
+      }
+    });
+  </script>
 
   </body>
 
