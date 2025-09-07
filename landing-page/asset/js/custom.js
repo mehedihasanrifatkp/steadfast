@@ -80,6 +80,27 @@ function showSlides() {
     dot.classList.toggle("active", index * slidesPerPage === slideIndex);
   });
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileToggler = document.querySelector(".mobile-nav-toggler");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const closeBtn = document.querySelector(".mobile-menu .close-btn");
+  const backdrop = document.querySelector(".mobile-menu .menu-backdrop");
+
+  // Open menu
+  mobileToggler.addEventListener("click", function () {
+    mobileMenu.classList.add("active");
+    document.body.classList.add("menu-opened");
+  });
+
+  // Close menu (on close button or backdrop click)
+  [closeBtn, backdrop].forEach((el) => {
+    el.addEventListener("click", function () {
+      mobileMenu.classList.remove("active");
+      document.body.classList.remove("menu-opened");
+    });
+  });
+});
+
 
 startSlideTimer();
 // custom testimonial slider js code
