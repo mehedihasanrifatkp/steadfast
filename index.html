@@ -81,6 +81,20 @@
                 </nav>
             </div>
         </div>
+        <div class="mobile-nav-toggler">
+  <img src="landing-page/asset/images/fa_bar.svg" alt="">
+</div>
+
+<div class="mobile-menu">
+  <div class="menu-backdrop"></div>
+  <nav class="menu-box">
+    ...
+    <div class="close-btn ">
+      <img src="landing-page/asset/images/close.png" alt="" class="img-fluid">
+    </div>
+  </nav>
+</div>
+
         <div class="mobile-menu">
             <div class="menu-backdrop"></div>
             <nav class="menu-box">
@@ -523,13 +537,26 @@
   });
 </script>
 <script>
-  const hamburger = document.getElementById("hamburger");
-  const menu = document.getElementById("menu");
+  // Elements
+  const mobileToggler = document.querySelector(".mobile-nav-toggler");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const closeBtn = document.querySelector(".close-btn");
+  const backdrop = document.querySelector(".menu-backdrop");
 
-  hamburger.addEventListener("click", () => {
-    menu.classList.toggle("active");
+  // Show mobile menu
+  mobileToggler.addEventListener("click", () => {
+    mobileMenu.classList.add("active");
+  });
+
+  // Hide mobile menu (close button or backdrop click)
+  closeBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+  });
+  backdrop.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
   });
 </script>
+
 
 
   </body>
