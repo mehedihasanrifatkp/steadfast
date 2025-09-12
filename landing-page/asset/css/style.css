@@ -53,6 +53,7 @@
     line-height: 1.3;
 }
 
+
 /*------Navbar------*/
 /*------Navbar------*/
 /* .navbar-wrapper.nav-sticky {
@@ -64,7 +65,97 @@
   z-index: 999;
   transition: 0.5s all;
 } */
- 
+ /* .status-check-section {
+  background: #4a90e2;
+} */
+
+.custom-container {
+  max-width: 1330px;
+  margin: 0 auto;
+}
+
+.search-card select,
+.search-card input {
+  height: 50px;
+}
+
+.search-card button {
+  height: 50px;
+  padding: 0 30px;
+}
+
+.result-card img {
+  opacity: 0.9;
+}
+/* Section background */
+/* .status-check-section {
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+} */
+
+/* Container fix */
+.custom-container {
+  max-width: 1330px;
+  margin: 0 auto;
+}
+
+/* Card style */
+.search-card {
+  border: 1px solid #eaeaea;
+}
+
+/* Input & Select */
+.search-box select,
+.search-box input {
+    height: 100%;
+    border: 1px solid #00b795;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    flex: 1;
+    min-width: 150px;
+}
+
+/* Hover effect */
+.search-box select:hover,
+.search-box input:hover {
+  border-color: #00b795;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+
+/* Focus */
+.search-box select:focus,
+.search-box input:focus {
+  outline: none;
+  border-color: #00b795;
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.4);
+}
+
+/* Button Style */
+.search-box button {
+  height: 50px;
+  border-radius: 8px;
+  padding: 0 30px;
+  font-weight: bold;
+  font-size: 16px;
+  /* background: linear-gradient(45deg, #4a90e2, #357abd); */
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* Button hover */
+.search-box button:hover {
+  /* background: linear-gradient(45deg, #357abd, #2c5ea8); */
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Button active */
+.search-box button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
 .navbar-wrapper.nav-sticky {
   position: fixed;
   top: 0;
