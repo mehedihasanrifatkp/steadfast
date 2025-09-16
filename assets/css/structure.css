@@ -423,7 +423,7 @@ h1 {
 h2 {
   font-size: 48px;
   line-height: 64px;
-  font-family: bangla;
+  font-family: 'SiyamRupali';
 }
 h3 {
   font-size: 40px;
@@ -462,9 +462,9 @@ p {
   padding: 0;
   font-weight: 400;
   color: var(--txt-neutral-500);
-  font-size: 28px;
+  font-size: 20px;
   line-height: 33px;
-  font-family: bangla;
+  font-family: 'SiyamRupali';
   text-align: justify;
 }
 a {
